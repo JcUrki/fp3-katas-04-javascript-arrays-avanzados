@@ -20,8 +20,8 @@ export function calcAverageCalories(menu){
 }
 
 export function calcAverageRate(product){
-    return menu.reduce((ac, e,i,a)=>
-    ac +=product.reviews.rate/a.length,0)
+    return product.reviews.reduce((ac, e,i,a)=>
+    ac +=e.rate/a.length,0)
 }
 
 let product = {
