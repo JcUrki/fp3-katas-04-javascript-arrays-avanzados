@@ -1,4 +1,7 @@
-import {capitalizeArrays,calcFinalGrade} from '../src/arrays.js';
+import {capitalizeArrays,
+        calcFinalGrade,
+        calcAverageCalories
+    } from '../src/arrays.js';
 
 /* Dada un array de nombre de ciudades, devolver un array con la primera letra de cada ciudad en mayúsculas.
 
@@ -23,5 +26,17 @@ describe('array maps',()=>{
           const finalGrade =calcFinalGrade(students);
         expect(finalGrade).toMatchObject([{name:"A",final_grade:0.4*((82+92)/2)+(0.6*70)}])
     })
+ })
+
+ describe('array reduce',()=>{
+     test('calcAverageCalories() should return the calculated average of calories',()=>{
+        let menu = [
+            { name: "a", calories: 100 },
+            { name: "b", calories: 200 },
+            { name: "c", calories: 300 },
+          ];
+
+        expect(calcAverageCalories(menu)).toBe(200);
+     })
  })
 

@@ -95,9 +95,9 @@ Cread una función `calcFinalGrade()` que reciba un objeto como el anterior, com
 
 ### ejercicio 3
 
-Dado un menu de alimentos con sus calorías calcula la **media** de calorías de todo el menú.
+Crea una función `calcAverageCalories()` que reciba un objeto como el que se proporciona y devuelva la **media** de calorías de todo el menú. Utiliza la función reduce para calcularlo.
 
-Los datos de partida son:
+Los datos de partida deben tener la siguiente estructura:
 
 ```
 let menu = [
@@ -148,6 +148,8 @@ let product = {
 
 ```
 Queremos mostrar el producto en nuestra web pero no queremos mostrar todos los comentarios de primera vista. Sólo necesitamos la valoración media para que los clientes se hagan una idea rápida de la valoración del producto.
+
+Crea una función que calcule la media de las valoraciones de los clientes y el test que pruebe la función (_tip_: misma estructura que el test de la función anterior)
 
 ### BONUS
 Traslada la media a pintar "estrellas" de valoración en una página web con la imagen del producto.
